@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #healthbar {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #playerhealth {
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #enemyhealth {
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #timer {
+            background-color: orange;
+            width: 100px;
+            height: 80px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid white;
+        }
+
+        #result {
+            position: absolute;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: none;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main big div -->
+    <div style="position: relative; display: inline-block;">
+        <!-- to show health and timer at the top  -->
+        <div id="healthbar">
+            <!-- player health -->
+            <div style="position: relative;
+             width: 100%;
+             display: flex;
+             justify-content: flex-end;
+             border-top : 4px solid white;
+             border-left : 4px solid white;
+             border-bottom : 4px solid white;
+             ">
+                <div style="background-color: yellow; height: 35px; width: 100%;"></div>
+                <div id="playerhealth"></div>
+            </div>
+            <!-- timer -->
+            <div id="timer"></div>
+            <!-- enemy health -->
+            <div style="position: relative;
+            width: 100%;
+            justify-content: flex-end;
+            border-top : 4px solid white;
+            border-right : 4px solid white;
+            border-bottom : 4px solid white;
+            ">
+                <div style="background-color: yellow; height: 35px;"></div>
+                <div id="enemyhealth"></div>
+            </div>
+        </div>
+        <div id="result"></div>
+        <canvas></canvas>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="js/functionalities.js"></script>
+    <script src="js/image_paths.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
