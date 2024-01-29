@@ -37,7 +37,7 @@ const player = new fighter({
     },
     offset: {
         x: 200,
-        y: 300
+        y: 335
     },
     sprites: {
         idle: {
@@ -98,7 +98,7 @@ const enemy = new fighter({
     //offset to point enemy attackbox in opposite direction
     offset: {
         x: 200,
-        y: 300
+        y: 335
     },
     sprites: {
         idle: {
